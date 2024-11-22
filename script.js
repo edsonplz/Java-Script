@@ -59,3 +59,69 @@ const nome = age==21 ? "È o Edson" : "Não é o Edson"
 console.log(nome)
 console.log(media)
 console.log(fullname)
+
+//funções
+function calcularMedia (a,b,c) {
+    const somanotas= a+b+c;
+    const resultado= somanotas/3;
+    console.log(`Sua media e: ${resultado}`)
+}
+
+//função usando retorno
+function calculaarMedia (a,b,c) {
+    const resultado = (a+b+c)/3
+    return `Sua media e: ${resultado}`
+}
+
+const meedia = calculaarMedia(8,8,8)
+
+calcularMedia(7,7,7)
+console.log(meedia)
+
+//arrow function
+const calcularrMedia = (a,b,c) => {
+    return (a+b+c)/3
+}
+
+const formatarnome = nome => `Seu nome e: ${nome}`
+
+const nomee = formatarnome("Edson") 
+const mediaa = calcularrMedia(6,6,6)
+
+console.log(mediaa)
+console.log(nomee)
+
+
+let frase = ``;
+
+function nomesobrenome (nome, sobrenome) {
+    let frase = `O nome e: ${nome} e o sobrenome e: ${sobrenome}`;
+    return frase
+}
+
+const formatartext = (name,surname) => {
+    let frase = `O seu nome: ${name}, seu sobrenome: ${surname}`
+    return frase;
+}
+
+console.log(formatartext("João", "Silva"))
+
+let listanomes = ["José","Pedro","Lucas"];
+listanomes.push("Edson");
+listanomes.pop();
+listanomes.shift();
+listanomes.splice(1,1,"Pangolão")
+
+console.log(listanomes)
+
+const dadospessoais = {
+    nome: "Edson",
+    idade: 21,
+    ocupacao: "Estudante",
+    endereco: {
+        cidade:"Piloezinhos",
+        bairro:"Amarelinha"
+    }
+}
+
+console.log(dadospessoais)
