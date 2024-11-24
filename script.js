@@ -125,3 +125,40 @@ const dadospessoais = {
 }
 
 console.log(dadospessoais)
+
+//Estrutura de repetição For
+for (let i=1; i<=5 ; i++) {
+    console.log(`O index : ${i}`)
+}
+
+alunos = ["Rogerio","Darlan","Luan"]
+alunos.push("Edson")
+alunos.push("Sarah")
+
+// for (let i in alunos) {
+//     console.log(`j3:O nome do aluno e: ${alunos[i]}`)
+// }
+
+// for (let i of alunos) {
+//     console.log(`j2:O nome do aluno e: ${i}`)
+// }
+
+// for (let i=0; i<alunos.length; i++) {
+//     console.log(`j1:O nome do aluno e: ${alunos[i]}`)
+// }
+
+
+//Estrutura de repetição While
+contador = 0;
+
+while(contador <5) {
+    console.log(`Contador: ${contador}`)
+    contador++
+}
+
+conta = 0;
+
+do {
+    console.log(`Contador: ${conta}`)
+    conta++
+} while(conta <3)
