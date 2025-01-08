@@ -162,3 +162,66 @@ do {
     console.log(`Contador: ${conta}`)
     conta++
 } while(conta <3)
+
+//For Each
+const numbers = [1,2,3,4,5]
+
+numbers.forEach(item => {
+    return console.log(item * 2)
+})
+
+//Map
+const formatedd = numbers.map(item => {
+    return item * 2;
+})
+
+console.log(formatedd)
+
+//Filtrar com filter
+const par = numbers.filter(item => item %2 === 0)
+
+console.log(par)
+
+const matriculados = [
+    {
+        id: 1,
+        nome: "Edson"
+    },
+    {
+        id: 2,
+        nome:"Juliana"
+    },
+    {
+        id: 3,
+        nome: "Joca"
+    }
+]
+
+//Procurar com find
+const procurar = matriculados.find(procurado => procurado.id=="2")
+
+console.log(procurar)
+
+//Metodo Split
+const frutas = "Maça, uva, pera, melancia";
+
+console.log(frutas.split(","))
+
+//Metodo Join
+const cidades = ["Pilõezinhos","Guarabira","Sapé"]
+
+console.log(cidades.join(","))
+
+//Metodos Some, every e includes:
+const num = [2,4,6,8,0,2];
+
+//Some
+console.log(num.some(n => n > 7))
+
+//Every
+console.log(num.every(n => n < 10))
+
+//Includes
+const nomes = ["Edson","Pedro","Hugo"]
+
+console.log(nomes.includes("Hugo"))
